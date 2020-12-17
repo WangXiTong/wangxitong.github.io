@@ -75,8 +75,6 @@
 			
 				<li><a href="/" target="_blank">主页</a></li>
 			
-				<li><a href="/arithmetic" target="_blank">算法</a></li>
-			
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -138,8 +136,6 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
@@ -152,9 +148,7 @@
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
-		        
-					<li style="width: 50%"><a href="/arithmetic">算法</a></li>
+					<li style="width: 100%"><a href="/">主页</a></li>
 		        
 				</ul>
 			</nav>
@@ -173,12 +167,36 @@
             
 
   
-    <article id="post-arithmetic/index" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-index" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/12/17/index/" target="_blank">index</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/12/17/index/" class="archive-article-date">
+        <time datetime="2020-12-17T12:12:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-17</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
   <div class="article-entry" itemprop="articleBody">
     
-    <h1 id="arithmetic"><a href="#arithmetic" class="headerlink" title="arithmetic"></a>arithmetic</h1>
+    
     
 
     
@@ -193,7 +211,7 @@
 
     
     <p class="article-more-link">
-      <a class="article-more-a" href="/2020/12/17/arithmetic/index/">展开全文 >></a>
+      <a class="article-more-a" href="/2020/12/17/index/">展开全文 >></a>
     </p>
     
 
@@ -223,7 +241,7 @@
 
 
   
-    <article id="post-my-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-twoSum" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -231,7 +249,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2020/12/16/my-blog/" target="_blank">2sum</a>
+	  <a class="article-title" href="/2020/12/16/twoSum/" target="_blank">two-sum</a>
   
     </h1>
   
@@ -239,7 +257,7 @@
 
   
   
-<a href="/2020/12/16/my-blog/" class="archive-article-date">
+<a href="/2020/12/16/twoSum/" class="archive-article-date">
         <time datetime="2020-12-16T12:05:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-16</time>
 </a>
 
@@ -257,7 +275,7 @@
 <h1 id="思路一：暴力解法"><a href="#思路一：暴力解法" class="headerlink" title="思路一：暴力解法"></a>思路一：暴力解法</h1><p>双重循环   时间复杂度O(n²)   空间复杂度  O(1)</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> twoSum = <span class="function"><span class="keyword">function</span> (<span class="params">nums, target</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// const arr = [];</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> j = i + <span class="number">1</span>; j &lt; nums.length; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] + nums[j] === target) &#123;</span><br><span class="line">                <span class="comment">// 只能输出一种结果  </span></span><br><span class="line">                <span class="comment">// return new Array(i, j);</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 可以把所有可能的结果都进行输出</span></span><br><span class="line">    arr.push(<span class="keyword">new</span> <span class="built_in">Array</span>(i, j));</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> targetArr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">6</span>];</span><br><span class="line"><span class="keyword">const</span> targetNum = <span class="number">7</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(twoSum(targetArr, targetNum));</span><br><span class="line"></span><br><span class="line"><span class="comment">// 输出  [ [ 0, 4 ], [ 2, 3 ] ]</span></span><br></pre></td></tr></table></figure>
     
-    <a class="article-more-a" href="/2020/12/16/my-blog/#more">more >></a>
+    <a class="article-more-a" href="/2020/12/16/twoSum/#more">more >></a>
     
     
 
@@ -284,7 +302,7 @@
 
     
     <p class="article-more-link">
-      <a class="article-more-a" href="/2020/12/16/my-blog/">展开全文 >></a>
+      <a class="article-more-a" href="/2020/12/16/twoSum/">展开全文 >></a>
     </p>
     
 

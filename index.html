@@ -75,6 +75,8 @@
 			
 				<li><a href="/" target="_blank">主页</a></li>
 			
+				<li><a href="/arithmetic" target="_blank">算法</a></li>
+			
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -136,6 +138,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -148,7 +152,9 @@
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 100%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
+		        
+					<li style="width: 50%"><a href="/arithmetic">算法</a></li>
 		        
 				</ul>
 			</nav>
@@ -167,6 +173,56 @@
             
 
   
+    <article id="post-arithmetic/index" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="arithmetic"><a href="#arithmetic" class="headerlink" title="arithmetic"></a>arithmetic</h1>
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/12/17/arithmetic/index/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-my-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -175,7 +231,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2020/12/16/my-blog/" target="_blank">my-blog</a>
+	  <a class="article-title" href="/2020/12/16/my-blog/" target="_blank">2sum</a>
   
     </h1>
   
@@ -196,7 +252,13 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h1 id="test11222"><a href="#test11222" class="headerlink" title="test11222"></a>test11222</h1>
+    <h1 id="描述："><a href="#描述：" class="headerlink" title="描述："></a>描述：</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">6</span>]</span><br><span class="line"><span class="number">7</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="思路一：暴力解法"><a href="#思路一：暴力解法" class="headerlink" title="思路一：暴力解法"></a>思路一：暴力解法</h1><p>双重循环   O(n²)</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> twoSum = <span class="function"><span class="keyword">function</span> (<span class="params">nums, target</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// const arr = [];</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> j = i + <span class="number">1</span>; j &lt; nums.length; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] + nums[j] === target) &#123;</span><br><span class="line">                <span class="comment">// 只能输出一种结果  </span></span><br><span class="line">                <span class="comment">// return new Array(i, j);</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 可以把所有可能的结果都进行输出</span></span><br><span class="line">    arr.push(<span class="keyword">new</span> <span class="built_in">Array</span>(i, j));</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> targetArr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">6</span>];</span><br><span class="line"><span class="keyword">const</span> targetNum = <span class="number">7</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(twoSum(targetArr, targetNum));</span><br><span class="line"></span><br><span class="line"><span class="comment">// 输出  [ [ 0, 4 ], [ 2, 3 ] ]</span></span><br></pre></td></tr></table></figure>
+    
+    <a class="article-more-a" href="/2020/12/16/my-blog/#more">more >></a>
+    
     
 
     
@@ -207,6 +269,17 @@
   <div class="article-info article-info-index">
     
     
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
     
 
     
@@ -368,6 +441,10 @@
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">算法</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -531,6 +608,56 @@
   
   <!-- <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="/plugins/ribbon.js/ribbon.min.js"></script> -->
   
+  
+    <script type="text/javascript" src="/plugins/live2d-widget.js/L2Dwidget.min.js"></script>
+<script type="text/javascript">
+  /**
+   * 完整配置请参考：https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init
+   */
+  var pluginModelPath = "assets/", // 模型的文件路径，无需更改
+    pluginRootPath = "/live2d_models/"; // 插件的路径，无需更改
+  //特定的模型json文件名称
+  var modelPathJson = {
+    "epsilon2_1": "Epsilon2.1",
+    "gf": "Gantzert_Felixander",
+    "haru/01": "haru01",
+    "haru/02": "haru02",
+    "nietzsche": "nietzche"
+  }
+
+  
+    var modelName = "haru/01";
+  
+
+  var modelJsonPath = "";
+  if (modelPathJson[modelName]) {
+    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelPathJson[modelName] +
+      ".model.json";
+  } else {
+    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelName + ".model.json";
+  }
+  L2Dwidget.init({
+    model: {
+      jsonPath: modelJsonPath
+    },
+    display: {
+       position: "right", 
+       width: 145, 
+       height: 315, 
+       hOffset: 50, 
+      
+    },
+    mobile: {
+       show: false, 
+       scale: 0.6 
+    },
+    react: {
+       opacity: 0.8 
+    }
+  })
+
+</script>
+
   
   
 </body>

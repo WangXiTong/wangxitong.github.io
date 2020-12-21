@@ -18,7 +18,7 @@
 <meta property="og:description" content="有些场景会需要实现一段文字，左右有居中的横线，然后中间的文字数量不定，但是横线距离文字的距离是保持不变的eg1:———— 这里是想要的文字 ———————— 文字文字 ———————— 文字 ———— 解决思路：第一想法肯定是使用伪类 before after这个想法是没错的 但是如果把伪类的 diaplay 设置成 block 会出现一个问题 当然 也可能是另一种场景就是需要这样eg2:————">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-12-21T13:05:50.000Z">
-<meta property="article:modified_time" content="2020-12-21T13:09:52.873Z">
+<meta property="article:modified_time" content="2020-12-21T13:12:21.533Z">
 <meta property="article:author" content="Daniel Wang">
 <meta property="article:tag" content="css">
 <meta name="twitter:card" content="summary">
@@ -222,6 +222,8 @@
 <h2 id="解决思路："><a href="#解决思路：" class="headerlink" title="解决思路："></a>解决思路：</h2><p>第一想法肯定是使用伪类 before after<br>这个想法是没错的 但是如果把伪类的 diaplay 设置成 block 会出现一个问题 当然 也可能是另一种场景就是需要这样<br>eg2:<br>———— 文字文字文字 ————<br>———— 文字文字 ————<br>———— 文字 ————</p>
 <p>什么意思呢 就是会造成你的伪类永远是在你元素的两边 然后文字居中展示 text-align: center<br>这样两边的横线到文字的距离是会变得 文字越多 距离越小 文字越少 距离越大<br>如果要想实现 eg1 的样子就要把伪类的 display 设置成 inline-block<br>思路就是把左右的横线也当成是文字考虑 比如你写一段话，不管你中间添加了多少个字但是第一个字和最后一个字距离第二个字和倒数第二个字的距离肯定是一样的<br>（仔细读，可能会比较抽象）<br>eg3:<br>横线文字文字文字横线<br>横线文字文字横线<br>横线文字横线</p>
 <p>大概就是 eg3 的意思 只需要调整一下横线和文字的距离就可以了<br>具体实现 代码如下：</p>
+<a id="more"></a>
+
 <p>html：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;title&quot;&gt;</span><br><span class="line">    文字文字文字</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
 

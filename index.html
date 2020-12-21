@@ -167,6 +167,100 @@
             
 
   
+    <article id="post-css实现左右横线" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/12/21/css%E5%AE%9E%E7%8E%B0%E5%B7%A6%E5%8F%B3%E6%A8%AA%E7%BA%BF/" target="_blank">css实现左右横线</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/12/21/css%E5%AE%9E%E7%8E%B0%E5%B7%A6%E5%8F%B3%E6%A8%AA%E7%BA%BF/" class="archive-article-date">
+        <time datetime="2020-12-21T13:05:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-21</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h2 id="有些场景会需要实现一段文字，左右有居中的横线，然后中间的文字数量不定，但是横线距离文字的距离是保持不变的"><a href="#有些场景会需要实现一段文字，左右有居中的横线，然后中间的文字数量不定，但是横线距离文字的距离是保持不变的" class="headerlink" title="有些场景会需要实现一段文字，左右有居中的横线，然后中间的文字数量不定，但是横线距离文字的距离是保持不变的"></a>有些场景会需要实现一段文字，左右有居中的横线，然后中间的文字数量不定，但是横线距离文字的距离是保持不变的</h2><p>eg1:<br>———— 这里是想要的文字 ————<br>———— 文字文字 ————<br>———— 文字 ————</p>
+<h2 id="解决思路："><a href="#解决思路：" class="headerlink" title="解决思路："></a>解决思路：</h2><p>第一想法肯定是使用伪类 before after<br>这个想法是没错的 但是如果把伪类的 diaplay 设置成 block 会出现一个问题 当然 也可能是另一种场景就是需要这样<br>eg2:<br>———— 文字文字文字 ————<br>———— 文字文字 ————<br>———— 文字 ————</p>
+<p>什么意思呢 就是会造成你的伪类永远是在你元素的两边 然后文字居中展示 text-align: center<br>这样两边的横线到文字的距离是会变得 文字越多 距离越小 文字越少 距离越大<br>如果要想实现 eg1 的样子就要把伪类的 display 设置成 inline-block<br>思路就是把左右的横线也当成是文字考虑 比如你写一段话，不管你中间添加了多少个字但是第一个字和最后一个字距离第二个字和倒数第二个字的距离肯定是一样的<br>（仔细读，可能会比较抽象）<br>eg3:<br>横线文字文字文字横线<br>横线文字文字横线<br>横线文字横线</p>
+<p>大概就是 eg3 的意思 只需要调整一下横线和文字的距离就可以了<br>具体实现 代码如下：</p>
+<p>html：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;title&quot;&gt;</span><br><span class="line">    文字文字文字</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>css： (pr 是我项目中为了适应屏幕自定义的单位可以忽略 根据自己项目来 相当于 rem)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">.title</span><br><span class="line">    height pr(70)</span><br><span class="line">    line-height pr(70)</span><br><span class="line">    font-size pr(58)</span><br><span class="line">    text-align center</span><br><span class="line">    color #5b2ac1</span><br><span class="line">    overflow hidden</span><br><span class="line">    margin 0 auto</span><br><span class="line">    margin-top pr(84)</span><br><span class="line">    position relative</span><br><span class="line">    font-weight bold</span><br><span class="line">    .title::before &#123;</span><br><span class="line">        content &quot;&quot;</span><br><span class="line">        display inline-block</span><br><span class="line">        width pr(100)</span><br><span class="line">        height pr(3)</span><br><span class="line">        background-color #5b2ac1</span><br><span class="line">        margin-right pr(25)</span><br><span class="line">        margin-bottom pr(18)</span><br><span class="line">    &#125;</span><br><span class="line">    .title::after &#123;</span><br><span class="line">        content &quot;&quot;</span><br><span class="line">        display inline-block</span><br><span class="line">        width pr(100)</span><br><span class="line">        height pr(3)</span><br><span class="line">        background-color #5b2ac1</span><br><span class="line">        margin-left pr(25)</span><br><span class="line">        margin-bottom pr(18)</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/12/21/css%E5%AE%9E%E7%8E%B0%E5%B7%A6%E5%8F%B3%E6%A8%AA%E7%BA%BF/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-isValid" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -657,6 +751,10 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">工程化</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
               </li>
             
             <div class="clearfix"></div>

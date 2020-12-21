@@ -6,16 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Hexo</title>
+  <title>css实现左右横线 | Hexo</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="有些场景会需要实现一段文字，左右有居中的横线，然后中间的文字数量不定，但是横线距离文字的距离是保持不变的eg1:———— 这里是想要的文字 ———————— 文字文字 ———————— 文字 ———— 解决思路：第一想法肯定是使用伪类 before after这个想法是没错的 但是如果把伪类的 diaplay 设置成 block 会出现一个问题 当然 也可能是另一种场景就是需要这样eg2:————">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css实现左右横线">
+<meta property="og:url" content="http://yoursite.com/2020/12/21/css%E5%AE%9E%E7%8E%B0%E5%B7%A6%E5%8F%B3%E6%A8%AA%E7%BA%BF/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="有些场景会需要实现一段文字，左右有居中的横线，然后中间的文字数量不定，但是横线距离文字的距离是保持不变的eg1:———— 这里是想要的文字 ———————— 文字文字 ———————— 文字 ———— 解决思路：第一想法肯定是使用伪类 before after这个想法是没错的 但是如果把伪类的 diaplay 设置成 block 会出现一个问题 当然 也可能是另一种场景就是需要这样eg2:————">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-12-21T13:05:50.000Z">
+<meta property="article:modified_time" content="2020-12-21T13:09:52.873Z">
 <meta property="article:author" content="Daniel Wang">
+<meta property="article:tag" content="css">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -160,41 +165,131 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-css实现左右横线" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/12/21/css%E5%AE%9E%E7%8E%B0%E5%B7%A6%E5%8F%B3%E6%A8%AA%E7%BA%BF/" class="archive-article-date">
-        <time datetime="2020-12-21T13:05:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-21</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/12/21/css%E5%AE%9E%E7%8E%B0%E5%B7%A6%E5%8F%B3%E6%A8%AA%E7%BA%BF/" target="_blank">css实现左右横线</a>
   
+    <h1 class="article-title" itemprop="name">
+      css实现左右横线
     </h1>
   
 
 
-        <div class="article-info info-on-right">
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2020/12/21/css%E5%AE%9E%E7%8E%B0%E5%B7%A6%E5%8F%B3%E6%A8%AA%E7%BA%BF/" class="archive-article-date">
+        <time datetime="2020-12-21T13:05:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-21</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">510字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">2分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h2 id="有些场景会需要实现一段文字，左右有居中的横线，然后中间的文字数量不定，但是横线距离文字的距离是保持不变的"><a href="#有些场景会需要实现一段文字，左右有居中的横线，然后中间的文字数量不定，但是横线距离文字的距离是保持不变的" class="headerlink" title="有些场景会需要实现一段文字，左右有居中的横线，然后中间的文字数量不定，但是横线距离文字的距离是保持不变的"></a>有些场景会需要实现一段文字，左右有居中的横线，然后中间的文字数量不定，但是横线距离文字的距离是保持不变的</h2><p>eg1:<br>———— 这里是想要的文字 ————<br>———— 文字文字 ————<br>———— 文字 ————</p>
+<h2 id="解决思路："><a href="#解决思路：" class="headerlink" title="解决思路："></a>解决思路：</h2><p>第一想法肯定是使用伪类 before after<br>这个想法是没错的 但是如果把伪类的 diaplay 设置成 block 会出现一个问题 当然 也可能是另一种场景就是需要这样<br>eg2:<br>———— 文字文字文字 ————<br>———— 文字文字 ————<br>———— 文字 ————</p>
+<p>什么意思呢 就是会造成你的伪类永远是在你元素的两边 然后文字居中展示 text-align: center<br>这样两边的横线到文字的距离是会变得 文字越多 距离越小 文字越少 距离越大<br>如果要想实现 eg1 的样子就要把伪类的 display 设置成 inline-block<br>思路就是把左右的横线也当成是文字考虑 比如你写一段话，不管你中间添加了多少个字但是第一个字和最后一个字距离第二个字和倒数第二个字的距离肯定是一样的<br>（仔细读，可能会比较抽象）<br>eg3:<br>横线文字文字文字横线<br>横线文字文字横线<br>横线文字横线</p>
+<p>大概就是 eg3 的意思 只需要调整一下横线和文字的距离就可以了<br>具体实现 代码如下：</p>
+<p>html：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;title&quot;&gt;</span><br><span class="line">    文字文字文字</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>css： (pr 是我项目中为了适应屏幕自定义的单位可以忽略 根据自己项目来 相当于 rem)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">.title</span><br><span class="line">    height pr(70)</span><br><span class="line">    line-height pr(70)</span><br><span class="line">    font-size pr(58)</span><br><span class="line">    text-align center</span><br><span class="line">    color #5b2ac1</span><br><span class="line">    overflow hidden</span><br><span class="line">    margin 0 auto</span><br><span class="line">    margin-top pr(84)</span><br><span class="line">    position relative</span><br><span class="line">    font-weight bold</span><br><span class="line">    .title::before &#123;</span><br><span class="line">        content &quot;&quot;</span><br><span class="line">        display inline-block</span><br><span class="line">        width pr(100)</span><br><span class="line">        height pr(3)</span><br><span class="line">        background-color #5b2ac1</span><br><span class="line">        margin-right pr(25)</span><br><span class="line">        margin-bottom pr(18)</span><br><span class="line">    &#125;</span><br><span class="line">    .title::after &#123;</span><br><span class="line">        content &quot;&quot;</span><br><span class="line">        display inline-block</span><br><span class="line">        width pr(100)</span><br><span class="line">        height pr(3)</span><br><span class="line">        background-color #5b2ac1</span><br><span class="line">        margin-left pr(25)</span><br><span class="line">        margin-bottom pr(18)</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>多谢大佬打赏<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpeg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.jpeg">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          Daniel Wang
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://yoursite.com/2020/12/21/css实现左右横线/" title="css实现左右横线" target="_blank">http://yoursite.com/2020/12/21/css实现左右横线/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -206,191 +301,130 @@
 		</ul>
 	</div>
 
-          
+    
 
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/12/21/css%E5%AE%9E%E7%8E%B0%E5%B7%A6%E5%8F%B3%E6%A8%AA%E7%BA%BF/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/12/21/isValid/" class="archive-article-date">
-        <time datetime="2020-12-21T12:06:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-21</time>
-</a>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/2020/12/21/isValid/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">isValid 有效的括号</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/12/21/isValid/" target="_blank">isValid 有效的括号</a>
-  
-    </h1>
-  
+        
+        
+    </div>
+</aside>
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/12/21/fib/" class="archive-article-date">
-        <time datetime="2020-12-21T11:36:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-21</time>
-</a>
 
-        </div>
-    	 
+
+
+
+
+
+
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/12/21/fib/" target="_blank">fib斐波那契数</a>
+  <div id="gitment-ctn"></div>
   
-    </h1>
+    <!-- 中文 -->
+    <link rel="stylesheet" href="/lib/gitment.css">
+    <script src="/lib/gitment.js"></script>
+  
+  <script>
+    <!-- id: "css实现左右横线" -->
+    var gitment = new Gitment({
+      id: "20201221210550",
+      owner: 'WangXiTong',
+      repo: 'myBlog',
+      oauth: {
+        client_id: 'ef18c87e452b39b9ae4e',
+        client_secret: '26337c6bbe3074e721a9206a05088a312eb10cd3',
+      },
+    })
+    gitment.render('gitment-ctn')
+  </script>
+
+
   
 
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/12/17/npm/" class="archive-article-date">
-        <time datetime="2020-12-17T14:24:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-17</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/12/17/npm/" target="_blank">npm</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">工程化</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/12/16/twoSum/" class="archive-article-date">
-        <time datetime="2020-12-16T12:05:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-16</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/12/16/twoSum/" target="_blank">two-sum</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -431,8 +465,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,

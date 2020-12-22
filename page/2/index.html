@@ -6,21 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>two-sum | Hexo</title>
+  <title>Hexo</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="描述：12[1, 2, 4, 3, 6]7  思路一：暴力解法双重循环   时间复杂度O(n²)   空间复杂度  O(1) 123456789101112131415161718192021var twoSum &#x3D; function (nums, target) &amp;#123;    &#x2F;&#x2F; const arr &#x3D; [];    for (let i &#x3D; 0; i &lt; nums.length;">
-<meta property="og:type" content="article">
-<meta property="og:title" content="two-sum">
-<meta property="og:url" content="http://yoursite.com/2020/12/16/twoSum/index.html">
+    
+    <!-- <meta name="keywords" content="">
+    <meta name="description" content=""> -->
+  
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="描述：12[1, 2, 4, 3, 6]7  思路一：暴力解法双重循环   时间复杂度O(n²)   空间复杂度  O(1) 123456789101112131415161718192021var twoSum &#x3D; function (nums, target) &amp;#123;    &#x2F;&#x2F; const arr &#x3D; [];    for (let i &#x3D; 0; i &lt; nums.length;">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-12-16T12:05:34.000Z">
-<meta property="article:modified_time" content="2020-12-17T12:27:31.432Z">
 <meta property="article:author" content="Daniel Wang">
-<meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -186,124 +185,44 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-twoSum" class="article article-type-post " itemscope itemprop="blogPost">
+            
+
+  
+    <article id="post-fib" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
-    <h1 class="article-title" itemprop="name">
-      two-sum
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/12/21/fib/" target="_blank">fib斐波那契数</a>
+  
     </h1>
   
 
 
   
   
-        
-        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
-              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
-        </span>
-
-<a href="/2020/12/16/twoSum/" class="archive-article-date">
-        <time datetime="2020-12-16T12:05:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-16</time>
+<a href="/2020/12/21/fib/" class="archive-article-date">
+        <time datetime="2020-12-21T11:36:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-21</time>
 </a>
 
   
   
     
-<div style="margin-top:10px;">
-  <span class="post-time">
-    <span class="post-meta-item-icon">
-      <!-- fonts.scss -->
-      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
-      <i class="icon-statistics"></i>
-      <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">319字</span>
-    </span>
-  </span>
-
-  <span class="post-time">
-    &nbsp; | &nbsp;
-    <span class="post-meta-item-icon">
-      <i class="icon-book icon"></i>
-      <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
-    </span>
-  </span>
-</div>
-
 
   
   </header>
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h1 id="描述："><a href="#描述：" class="headerlink" title="描述："></a>描述：</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">6</span>]</span><br><span class="line"><span class="number">7</span></span><br></pre></td></tr></table></figure>
+    <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 方案一：暴力递归</span></span><br><span class="line"><span class="comment">// var fib = function (N) &#123;</span></span><br><span class="line"><span class="comment">//     if (N === 0 || N === 1) &#123;</span></span><br><span class="line"><span class="comment">//         return N;</span></span><br><span class="line"><span class="comment">//     &#125;</span></span><br><span class="line"><span class="comment">//     return fib(N - 1) + fib(N - 2);</span></span><br><span class="line"><span class="comment">// &#125;;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 方案二：递推 使用循环  利用缓存优化重复的计算</span></span><br><span class="line"><span class="keyword">var</span> fib = <span class="function"><span class="keyword">function</span> (<span class="params">N</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// O(n)</span></span><br><span class="line">  <span class="keyword">let</span> cache = [];</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt;= N; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (i === <span class="number">0</span> || i === <span class="number">1</span>) &#123;</span><br><span class="line">      cache[i] = i;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      cache[i] = cache[i - <span class="number">1</span>] + cache[i - <span class="number">2</span>];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> cache[N];</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-<h1 id="思路一：暴力解法"><a href="#思路一：暴力解法" class="headerlink" title="思路一：暴力解法"></a>思路一：暴力解法</h1><p>双重循环   时间复杂度O(n²)   空间复杂度  O(1)</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> twoSum = <span class="function"><span class="keyword">function</span> (<span class="params">nums, target</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// const arr = [];</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> j = i + <span class="number">1</span>; j &lt; nums.length; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] + nums[j] === target) &#123;</span><br><span class="line">                <span class="comment">// 只能输出一种结果  </span></span><br><span class="line">                <span class="comment">// return new Array(i, j);</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 可以把所有可能的结果都进行输出</span></span><br><span class="line">    arr.push(<span class="keyword">new</span> <span class="built_in">Array</span>(i, j));</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> targetArr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">6</span>];</span><br><span class="line"><span class="keyword">const</span> targetNum = <span class="number">7</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(twoSum(targetArr, targetNum));</span><br><span class="line"></span><br><span class="line"><span class="comment">// 输出  [ [ 0, 4 ], [ 2, 3 ] ]</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h1 id="思路二：空间换时间"><a href="#思路二：空间换时间" class="headerlink" title="思路二：空间换时间"></a>思路二：空间换时间</h1><p>1 缺 6<br>2 缺 5<br>4 缺 3</p>
-<h2 id="使用indexOf-但是复杂度略高"><a href="#使用indexOf-但是复杂度略高" class="headerlink" title="使用indexOf  但是复杂度略高"></a>使用indexOf  但是复杂度略高</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> twoSum = <span class="function"><span class="keyword">function</span> (<span class="params">nums, target</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> arr = [];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (nums.indexOf(target - nums[i]) &gt; <span class="number">-1</span>) &#123;</span><br><span class="line">            <span class="comment">// 只能输出一种结果</span></span><br><span class="line">            <span class="comment">// return new Array(i, nums.indexOf(target - nums[i]));</span></span><br><span class="line"></span><br><span class="line">            arr.push(<span class="keyword">new</span> <span class="built_in">Array</span>(i, nums.indexOf(target - nums[i])));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 输出所有可能的结果</span></span><br><span class="line">    <span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> targetArr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">6</span>];</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(twoSum(targetArr, <span class="number">7</span>));</span><br><span class="line"></span><br><span class="line"><span class="comment">// 输出 [ [ 0, 4 ], [ 2, 3 ], [ 3, 2 ], [ 4, 0 ] ]</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="不使用indexOf"><a href="#不使用indexOf" class="headerlink" title="不使用indexOf"></a>不使用indexOf</h2><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 时间复杂度 O(n)    但是使用了object  所以占用空间  空间复杂度O(n)</span></span><br><span class="line"><span class="keyword">var</span> twoSum = <span class="function"><span class="keyword">function</span>(<span class="params">nums, target</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> obj = &#123;&#125;;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        <span class="keyword">const</span> num = nums[i];</span><br><span class="line">        <span class="keyword">if</span> (num <span class="keyword">in</span> obj) &#123;</span><br><span class="line">            <span class="keyword">return</span> [obj[num], i];</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            obj[target - num] = i</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     
 
     
-    <div class="page-reward">
-      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
-        <div class="tooltip tooltip-east">
-          <span class="tooltip-item">
-            赏
-          </span>
-          <span class="tooltip-content">
-            <span class="tooltip-text">
-              <span class="tooltip-inner">
-                <p class="reward-p"><i class="icon icon-quo-left"></i>多谢大佬打赏<i
-                    class="icon icon-quo-right"></i></p>
-                <div class="reward-box">
-                  
-                  <div class="reward-box-item">
-                    <img class="reward-img" src="/img/alipay.jpeg">
-                    <span class="reward-type">支付宝</span>
-                  </div>
-                  
-                  
-                  <div class="reward-box-item">
-                    <img class="reward-img" src="/img/weixin.jpeg">
-                    <span class="reward-type">微信</span>
-                  </div>
-                  
-                </div>
-              </span>
-            </span>
-          </span>
-        </div>
-      </a>
-    </div>
-    
 
-    
-    <div class="declare"> 
-      <ul class="post-copyright">
-        <li>
-          <strong>本文作者：</strong>
-          Daniel Wang
-        </li>
-        <li>
-          <strong>本文链接：</strong>
-          <a href="http://yoursite.com/2020/12/16/twoSum/" title="two-sum" target="_blank">http://yoursite.com/2020/12/16/twoSum/</a>
-        </li>
-        
-        <li>
-          <strong>版权声明： </strong>
-          
-          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
-        </li>
-        
-      </ul>
-    </div>
     
 
   </div>
@@ -324,80 +243,16 @@
     
 
     
-
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/12/21/fib/">展开全文 >></a>
+    </p>
     
-    
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a> -->
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/12/16/twoSum/" alt="微信分享二维码"> -->
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
 
     
     <div class="clearfix"></div>
   </div>
   </div>
 </article>
-
-
-<nav id="article-nav">
-  
-    <a href="/2020/12/17/npm/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          npm
-        
-      </div>
-    </a>
-  
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -418,37 +273,191 @@
 
 
 
+  
+    <article id="post-npm" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/12/17/npm/" target="_blank">npm</a>
+  
+    </h1>
+  
 
 
+  
+  
+<a href="/2020/12/17/npm/" class="archive-article-date">
+        <time datetime="2020-12-17T14:24:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-17</time>
+</a>
 
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h2 id="核心目标：Bring-the-best-of-open-source-to-you-your-team-and-your-company-（给你和你的团队、你的公司带来最好的开源库和依赖。）-注重安装和维护依赖"><a href="#核心目标：Bring-the-best-of-open-source-to-you-your-team-and-your-company-（给你和你的团队、你的公司带来最好的开源库和依赖。）-注重安装和维护依赖" class="headerlink" title="核心目标：Bring the best of open source to you, your team and your company （给你和你的团队、你的公司带来最好的开源库和依赖。）  注重安装和维护依赖"></a>核心目标：Bring the best of open source to you, your team and your company （给你和你的团队、你的公司带来最好的开源库和依赖。）  注重安装和维护依赖</h2><h2 id="安装机制"><a href="#安装机制" class="headerlink" title="安装机制"></a>安装机制</h2><p>会优先安装依赖包到当前项目目录，使得不同应用项目的依赖各成体系，同时还减轻了包作者的 API 兼容性压力，但这样做的缺陷也很明显：如果我们的项目 A 和项目 B，都依赖了相同的公共库 C，那么公共库 C 一般都会在项目 A 和项目 B 中，各被安装一次。这就说明，同一个依赖包可能在我们的电脑上进行多次安装。</p>
+<p>当然，对于一些工具模块比如 supervisor 和 gulp，你仍然可以使用全局安装模式，这样方便注册 path 环境变量，我们可以在任何地方直接使用 supervisor、 gulp 这些命令。（不过，一般还是建议不同项目维护自己局部的 gulp 开发工具以适配不同项目需求。）</p>
+<p><img src="/images/npm.jpg"></p>
+<h2 id="参考文献：LucasHC（侯策）-https-kaiwu-lagou-com-course-courseInfo-htm-courseId-584-detail-pc-id-5906"><a href="#参考文献：LucasHC（侯策）-https-kaiwu-lagou-com-course-courseInfo-htm-courseId-584-detail-pc-id-5906" class="headerlink" title="参考文献：LucasHC（侯策） https://kaiwu.lagou.com/course/courseInfo.htm?courseId=584#/detail/pc?id=5906"></a>参考文献：LucasHC（侯策） <a target="_blank" rel="noopener" href="https://kaiwu.lagou.com/course/courseInfo.htm?courseId=584#/detail/pc?id=5906">https://kaiwu.lagou.com/course/courseInfo.htm?courseId=584#/detail/pc?id=5906</a></h2>
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">工程化</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/12/17/npm/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
 
 
 
 
   
-  <div id="gitment-ctn"></div>
+    <article id="post-twoSum" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
   
-    <!-- 中文 -->
-    <link rel="stylesheet" href="/lib/gitment.css">
-    <script src="/lib/gitment.js"></script>
   
-  <script>
-    <!-- id: "two-sum" -->
-    var gitment = new Gitment({
-      id: "20201216200534",
-      owner: 'WangXiTong',
-      repo: 'myBlog',
-      oauth: {
-        client_id: 'ef18c87e452b39b9ae4e',
-        client_secret: '26337c6bbe3074e721a9206a05088a312eb10cd3',
-      },
-    })
-    gitment.render('gitment-ctn')
-  </script>
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/12/16/twoSum/" target="_blank">two-sum</a>
+  
+    </h1>
+  
 
 
   
+  
+<a href="/2020/12/16/twoSum/" class="archive-article-date">
+        <time datetime="2020-12-16T12:05:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-16</time>
+</a>
 
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="描述："><a href="#描述：" class="headerlink" title="描述："></a>描述：</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">6</span>]</span><br><span class="line"><span class="number">7</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="思路一：暴力解法"><a href="#思路一：暴力解法" class="headerlink" title="思路一：暴力解法"></a>思路一：暴力解法</h1><p>双重循环   时间复杂度O(n²)   空间复杂度  O(1)</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> twoSum = <span class="function"><span class="keyword">function</span> (<span class="params">nums, target</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// const arr = [];</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> j = i + <span class="number">1</span>; j &lt; nums.length; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] + nums[j] === target) &#123;</span><br><span class="line">                <span class="comment">// 只能输出一种结果  </span></span><br><span class="line">                <span class="comment">// return new Array(i, j);</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 可以把所有可能的结果都进行输出</span></span><br><span class="line">    arr.push(<span class="keyword">new</span> <span class="built_in">Array</span>(i, j));</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> targetArr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">6</span>];</span><br><span class="line"><span class="keyword">const</span> targetNum = <span class="number">7</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(twoSum(targetArr, targetNum));</span><br><span class="line"></span><br><span class="line"><span class="comment">// 输出  [ [ 0, 4 ], [ 2, 3 ] ]</span></span><br></pre></td></tr></table></figure>
+    
+    <a class="article-more-a" href="/2020/12/16/twoSum/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/12/16/twoSum/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </nav>
+  
 
 
           </div>
@@ -488,8 +497,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
-		isPost: true,
+		isHome: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

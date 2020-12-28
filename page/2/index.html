@@ -188,6 +188,188 @@
             
 
   
+    <article id="post-css实现左右横线" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/12/21/css%E5%AE%9E%E7%8E%B0%E5%B7%A6%E5%8F%B3%E6%A8%AA%E7%BA%BF/" target="_blank">css实现左右横线</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/12/21/css%E5%AE%9E%E7%8E%B0%E5%B7%A6%E5%8F%B3%E6%A8%AA%E7%BA%BF/" class="archive-article-date">
+        <time datetime="2020-12-21T13:05:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-21</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h2 id="有些场景会需要实现一段文字，左右有居中的横线，然后中间的文字数量不定，但是横线距离文字的距离是保持不变的"><a href="#有些场景会需要实现一段文字，左右有居中的横线，然后中间的文字数量不定，但是横线距离文字的距离是保持不变的" class="headerlink" title="有些场景会需要实现一段文字，左右有居中的横线，然后中间的文字数量不定，但是横线距离文字的距离是保持不变的"></a>有些场景会需要实现一段文字，左右有居中的横线，然后中间的文字数量不定，但是横线距离文字的距离是保持不变的</h2><p>eg1:<br>———— 这里是想要的文字 ————<br>———— 文字文字 ————<br>———— 文字 ————</p>
+<h2 id="解决思路："><a href="#解决思路：" class="headerlink" title="解决思路："></a>解决思路：</h2><p>第一想法肯定是使用伪类 before after<br>这个想法是没错的 但是如果把伪类的 diaplay 设置成 block 会出现一个问题 当然 也可能是另一种场景就是需要这样<br>eg2:<br>———— 文字文字文字 ————<br>———— 文字文字 ————<br>———— 文字 ————</p>
+<p>什么意思呢 就是会造成你的伪类永远是在你元素的两边 然后文字居中展示 text-align: center<br>这样两边的横线到文字的距离是会变得 文字越多 距离越小 文字越少 距离越大<br>如果要想实现 eg1 的样子就要把伪类的 display 设置成 inline-block<br>思路就是把左右的横线也当成是文字考虑 比如你写一段话，不管你中间添加了多少个字但是第一个字和最后一个字距离第二个字和倒数第二个字的距离肯定是一样的<br>（仔细读，可能会比较抽象）<br>eg3:<br>横线文字文字文字横线<br>横线文字文字横线<br>横线文字横线</p>
+<p>大概就是 eg3 的意思 只需要调整一下横线和文字的距离就可以了<br>具体实现 代码如下：</p>
+    
+    <a class="article-more-a" href="/2020/12/21/css%E5%AE%9E%E7%8E%B0%E5%B7%A6%E5%8F%B3%E6%A8%AA%E7%BA%BF/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/12/21/css%E5%AE%9E%E7%8E%B0%E5%B7%A6%E5%8F%B3%E6%A8%AA%E7%BA%BF/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-isValid" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/12/21/isValid/" target="_blank">isValid 有效的括号</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/12/21/isValid/" class="archive-article-date">
+        <time datetime="2020-12-21T12:06:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-21</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>给定一个只包括 ‘(‘，’)’，’{‘，’}’，’[‘，’]’  的字符串，判断字符串是否有效。</p>
+<p>有效字符串需满足：</p>
+<p>左括号必须用相同类型的右括号闭合。<br>左括号必须以正确的顺序闭合。<br>注意空字符串可被认为是有效字符串。</p>
+<h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;()&quot;</span><br><span class="line">输出: true</span><br><span class="line"></span><br><span class="line">输入: &quot;()[]&#123;&#125;&quot;</span><br><span class="line">输出: true</span><br><span class="line"></span><br><span class="line">输入: &quot;(]&quot;</span><br><span class="line">输出: false</span><br><span class="line"></span><br><span class="line">输入: &quot;([)]&quot;</span><br><span class="line">输出: false</span><br><span class="line"></span><br><span class="line">输入: &quot;&#123;[]&#125;&quot;</span><br><span class="line">输出: true</span><br></pre></td></tr></table></figure>
+
+<h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">var isValid &#x3D; function (s) &#123;</span><br><span class="line">    &#x2F;&#x2F; 1、定义一个栈 利用栈的概念分析 先看目标字符串元素是不是左括号，如果是 则入栈 然后看下一个</span><br><span class="line">    &#x2F;&#x2F; 2、如果不是 看栈的长度是否为0 如果为0的话说明没有左括号元素直接就是右括号 肯定不合规 直接 return false</span><br><span class="line">    &#x2F;&#x2F; 3、判断当前元素和栈顶元素是否匹配，如果匹配说明是一组合法括号 把栈顶元素弹出 并继续看下一个 如果不匹配 则直接return false</span><br><span class="line">    &#x2F;&#x2F; 4、循环结束之后判断栈里是否还有元素，如果没有则说明完全匹配 否则 return false</span><br><span class="line">    const cache &#x3D; [];</span><br><span class="line">    const map &#x3D; new Map();</span><br><span class="line">    map.set(&quot;(&quot;, &quot;)&quot;);</span><br><span class="line">    map.set(&quot;[&quot;, &quot;]&quot;);</span><br><span class="line">    map.set(&quot;&#123;&quot;, &quot;&#125;&quot;);</span><br><span class="line">    for (let i &#x3D; 0; i &lt; s.length; i++) &#123;</span><br><span class="line">        if (map.has(s[i])) &#123;</span><br><span class="line">            &#x2F;&#x2F; 元素是左括号  入栈</span><br><span class="line">            cache.push(s[i]);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            &#x2F;&#x2F; 元素不是左括号</span><br><span class="line">            if (cache.length &#x3D;&#x3D;&#x3D; 0) &#123;</span><br><span class="line">                &#x2F;&#x2F; 步骤2</span><br><span class="line">                &#x2F;&#x2F; 栈里没有左括号 直接来了一个右括号 直接return false</span><br><span class="line">                return false;</span><br><span class="line">            &#125;</span><br><span class="line">            if (map.get(cache[cache.length - 1]) &#x3D;&#x3D;&#x3D; s[i]) &#123;</span><br><span class="line">                &#x2F;&#x2F; 步骤3</span><br><span class="line">                cache.pop();</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                return false;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    &#x2F;&#x2F; 步骤4</span><br><span class="line">    if (cache.length) &#123;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">    return true;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/12/21/isValid/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-fib" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -362,100 +544,9 @@
 
 
   
-    <article id="post-twoSum" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/12/16/twoSum/" target="_blank">two-sum</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/12/16/twoSum/" class="archive-article-date">
-        <time datetime="2020-12-16T12:05:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-16</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="描述："><a href="#描述：" class="headerlink" title="描述："></a>描述：</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">6</span>]</span><br><span class="line"><span class="number">7</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="思路一：暴力解法"><a href="#思路一：暴力解法" class="headerlink" title="思路一：暴力解法"></a>思路一：暴力解法</h1><p>双重循环   时间复杂度O(n²)   空间复杂度  O(1)</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> twoSum = <span class="function"><span class="keyword">function</span> (<span class="params">nums, target</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// const arr = [];</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> j = i + <span class="number">1</span>; j &lt; nums.length; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] + nums[j] === target) &#123;</span><br><span class="line">                <span class="comment">// 只能输出一种结果  </span></span><br><span class="line">                <span class="comment">// return new Array(i, j);</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 可以把所有可能的结果都进行输出</span></span><br><span class="line">    arr.push(<span class="keyword">new</span> <span class="built_in">Array</span>(i, j));</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> targetArr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">6</span>];</span><br><span class="line"><span class="keyword">const</span> targetNum = <span class="number">7</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(twoSum(targetArr, targetNum));</span><br><span class="line"></span><br><span class="line"><span class="comment">// 输出  [ [ 0, 4 ], [ 2, 3 ] ]</span></span><br></pre></td></tr></table></figure>
-    
-    <a class="article-more-a" href="/2020/12/16/twoSum/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/12/16/twoSum/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+      <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &amp;raquo;</a>
     </nav>
   
 

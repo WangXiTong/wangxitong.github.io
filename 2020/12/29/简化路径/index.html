@@ -6,20 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>简化路径 | Hexo</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-    
-    <!-- <meta name="keywords" content="">
-    <meta name="description" content=""> -->
-  
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+  <meta name="description" content="描述 （详见LeetCode 71题）以 Unix 风格给出一个文件的绝对路径，你需要简化它。或者换句话说，将其转换为规范路径。 在 Unix 风格的文件系统中，一个点（.）表示当前目录本身；此外，两个点 （..） 表示将目录切换到上一级（指向父目录）；两者都可以是复杂相对路径的组成部分。更多信息请参阅：Linux &#x2F; Unix中的绝对路径 vs 相对路径 请注意，返回的规范路径必须始终以斜杠 &#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="简化路径">
+<meta property="og:url" content="http://yoursite.com/2020/12/29/%E7%AE%80%E5%8C%96%E8%B7%AF%E5%BE%84/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="描述 （详见LeetCode 71题）以 Unix 风格给出一个文件的绝对路径，你需要简化它。或者换句话说，将其转换为规范路径。 在 Unix 风格的文件系统中，一个点（.）表示当前目录本身；此外，两个点 （..） 表示将目录切换到上一级（指向父目录）；两者都可以是复杂相对路径的组成部分。更多信息请参阅：Linux &#x2F; Unix中的绝对路径 vs 相对路径 请注意，返回的规范路径必须始终以斜杠 &#x2F;">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-12-29T08:26:34.000Z">
+<meta property="article:modified_time" content="2020-12-29T08:28:45.039Z">
 <meta property="article:author" content="Daniel Wang">
+<meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -185,248 +186,123 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-
-  
-    <article id="post-面试总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-简化路径" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/12/22/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/" target="_blank">面试总结</a>
-  
+    <h1 class="article-title" itemprop="name">
+      简化路径
     </h1>
   
 
 
   
   
-<a href="/2020/12/22/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/" class="archive-article-date">
-        <time datetime="2020-12-22T02:24:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-22</time>
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2020/12/29/%E7%AE%80%E5%8C%96%E8%B7%AF%E5%BE%84/" class="archive-article-date">
+        <time datetime="2020-12-29T08:26:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-29</time>
 </a>
 
   
   
     
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">632字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">2分</span>
+    </span>
+  </span>
+</div>
+
 
   
   </header>
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>在今年年初经历了一波面试，也拿了几家中厂的 offer，最终入职了自己满意公司。刚入职比较忙一直没时间整理笔记，现在简单写写自己的一些面试经验。当然，可能自己水平不是很高，所以经验可能仅针对初、中级前端面试 可能不是足够全面 但是前端可以考察的知识点过于庞杂 这里只进行有限的罗列</p>
-<p>首先对前端面试会问到的方向做一个基本的分类</p>
-<h1 id="网络类"><a href="#网络类" class="headerlink" title="网络类"></a>网络类</h1><ul>
-<li>http 与 https http1.0 版本 1.1 版本 2 版本 的对比</li>
-<li>常见状态码及对应含义</li>
-<li>请求头参数及含义</li>
-<li>网络缓存浏览器缓存</li>
-</ul>
-<h1 id="跨域"><a href="#跨域" class="headerlink" title="跨域"></a>跨域</h1><ul>
-<li>协议 端口 域名 同源策略</li>
-<li>JSONP 前端跨域</li>
-<li>cros 后端解决</li>
-<li>postmessage</li>
-</ul>
-<h1 id="网络安全"><a href="#网络安全" class="headerlink" title="网络安全"></a>网络安全</h1><ul>
-<li>xss</li>
-<li>csrf</li>
-<li>SQL 注入</li>
-<li>命令行注入</li>
-<li>DNS 劫持</li>
-</ul>
-    
-    <a class="article-more-a" href="/2020/12/22/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/#more">more >></a>
-    
+    <h1 id="描述-（详见LeetCode-71题）"><a href="#描述-（详见LeetCode-71题）" class="headerlink" title="描述 （详见LeetCode 71题）"></a>描述 （详见LeetCode 71题）</h1><p>以 Unix 风格给出一个文件的绝对路径，你需要简化它。或者换句话说，将其转换为规范路径。</p>
+<p>在 Unix 风格的文件系统中，一个点（.）表示当前目录本身；此外，两个点 （..） 表示将目录切换到上一级（指向父目录）；两者都可以是复杂相对路径的组成部分。更多信息请参阅：Linux / Unix中的绝对路径 vs 相对路径</p>
+<p>请注意，返回的规范路径必须始终以斜杠 / 开头，并且两个目录名之间必须只有一个斜杠 /。最后一个目录名（如果存在）不能以 / 结尾。此外，规范路径必须是表示绝对路径的最短字符串。</p>
+<p>示例 1：<br>输入：”/home/“<br>输出：”/home”<br>解释：注意，最后一个目录名后面没有斜杠。</p>
+<p>示例 2：<br>输入：”/../“<br>输出：”/“<br>解释：从根目录向上一级是不可行的，因为根是你可以到达的最高级。</p>
+<p>示例 3：<br>输入：”/home//foo/“<br>输出：”/home/foo”<br>解释：在规范路径中，多个连续斜杠需要用一个斜杠替换。</p>
+<p>示例 4：<br>输入：”/a/./b/../../c/“<br>输出：”/c”</p>
+<h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * @param &#123;string&#125; path</span><br><span class="line"> * @return &#123;string&#125;</span><br><span class="line"> *&#x2F;</span><br><span class="line">var simplifyPath &#x3D; function (path) &#123;</span><br><span class="line">    let stack &#x3D; [];</span><br><span class="line">    let paths &#x3D; path.split(&#39;&#x2F;&#39;);</span><br><span class="line">    let i &#x3D; 0;</span><br><span class="line">    let len &#x3D; paths.length;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 方案一 运行速度快 解决本道算法题比较有优势   但是如果需要匹配的规则比较多 比如需要匹配 ~ 或者正则等 就需要在循环里写大量的if else来处理</span><br><span class="line">    &#x2F;&#x2F; for (i; i &lt; len; i++) &#123;</span><br><span class="line">    &#x2F;&#x2F;     const p &#x3D; paths[i];</span><br><span class="line">    &#x2F;&#x2F;     if (p &#x3D;&#x3D; &#39;..&#39;) &#123;</span><br><span class="line">    &#x2F;&#x2F;         &#x2F;&#x2F; 返回上一级</span><br><span class="line">    &#x2F;&#x2F;         stack.pop();</span><br><span class="line">    &#x2F;&#x2F;     &#125; else if (p &amp;&amp; p !&#x3D; &#39;.&#39;) &#123;</span><br><span class="line">    &#x2F;&#x2F;         stack.push(p);</span><br><span class="line">    &#x2F;&#x2F;     &#125;</span><br><span class="line">    &#x2F;&#x2F; &#125;</span><br><span class="line">    &#x2F;&#x2F; return &#39;&#x2F;&#39; + stack.join(&#39;&#x2F;&#39;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 方案二  维护一个规则对象（策略模式） 循环里只需要写一个if else 符合规则 就使用规则  不符合 就push  这样在本题的运行速度没有方案一快 但是是一种适用于复杂场景的方案  其基本思路都是一样的  只是写法略有不同</span><br><span class="line">    const obj &#x3D; &#123;</span><br><span class="line">        &#39;&#39;: stack &#x3D;&gt; stack,</span><br><span class="line">        &#39;.&#39;: stack &#x3D;&gt; stack,</span><br><span class="line">        &#39;..&#39;: stack &#x3D;&gt; &#123;</span><br><span class="line">            return stack.pop();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    for (i; i &lt; len; i++) &#123;</span><br><span class="line">        const p &#x3D; paths[i];</span><br><span class="line">        if (obj[p]) &#123;</span><br><span class="line">            obj[p](stack);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            stack.push(p);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return &#39;&#x2F;&#39; + stack.join(&#39;&#x2F;&#39;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
     
 
     
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">面试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/12/22/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>多谢大佬打赏<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpeg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.jpeg">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
         </div>
-        
-        
+      </a>
     </div>
-</aside>
-
-
-
-
-  
-    <article id="post-css实现左右横线" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/12/21/css%E5%AE%9E%E7%8E%B0%E5%B7%A6%E5%8F%B3%E6%A8%AA%E7%BA%BF/" target="_blank">css实现左右横线</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/12/21/css%E5%AE%9E%E7%8E%B0%E5%B7%A6%E5%8F%B3%E6%A8%AA%E7%BA%BF/" class="archive-article-date">
-        <time datetime="2020-12-21T13:05:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-21</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h2 id="有些场景会需要实现一段文字，左右有居中的横线，然后中间的文字数量不定，但是横线距离文字的距离是保持不变的"><a href="#有些场景会需要实现一段文字，左右有居中的横线，然后中间的文字数量不定，但是横线距离文字的距离是保持不变的" class="headerlink" title="有些场景会需要实现一段文字，左右有居中的横线，然后中间的文字数量不定，但是横线距离文字的距离是保持不变的"></a>有些场景会需要实现一段文字，左右有居中的横线，然后中间的文字数量不定，但是横线距离文字的距离是保持不变的</h2><p>eg1:<br>———— 这里是想要的文字 ————<br>———— 文字文字 ————<br>———— 文字 ————</p>
-<h2 id="解决思路："><a href="#解决思路：" class="headerlink" title="解决思路："></a>解决思路：</h2><p>第一想法肯定是使用伪类 before after<br>这个想法是没错的 但是如果把伪类的 diaplay 设置成 block 会出现一个问题 当然 也可能是另一种场景就是需要这样<br>eg2:<br>———— 文字文字文字 ————<br>———— 文字文字 ————<br>———— 文字 ————</p>
-<p>什么意思呢 就是会造成你的伪类永远是在你元素的两边 然后文字居中展示 text-align: center<br>这样两边的横线到文字的距离是会变得 文字越多 距离越小 文字越少 距离越大<br>如果要想实现 eg1 的样子就要把伪类的 display 设置成 inline-block<br>思路就是把左右的横线也当成是文字考虑 比如你写一段话，不管你中间添加了多少个字但是第一个字和最后一个字距离第二个字和倒数第二个字的距离肯定是一样的<br>（仔细读，可能会比较抽象）<br>eg3:<br>横线文字文字文字横线<br>横线文字文字横线<br>横线文字横线</p>
-<p>大概就是 eg3 的意思 只需要调整一下横线和文字的距离就可以了<br>具体实现 代码如下：</p>
-    
-    <a class="article-more-a" href="/2020/12/21/css%E5%AE%9E%E7%8E%B0%E5%B7%A6%E5%8F%B3%E6%A8%AA%E7%BA%BF/#more">more >></a>
-    
     
 
     
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/12/21/css%E5%AE%9E%E7%8E%B0%E5%B7%A6%E5%8F%B3%E6%A8%AA%E7%BA%BF/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          Daniel Wang
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://yoursite.com/2020/12/29/简化路径/" title="简化路径" target="_blank">http://yoursite.com/2020/12/29/简化路径/</a>
+        </li>
         
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
+        <li>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
         
-        
+      </ul>
     </div>
-</aside>
-
-
-
-
-  
-    <article id="post-isValid" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/12/21/isValid/" target="_blank">isValid 有效的括号</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/12/21/isValid/" class="archive-article-date">
-        <time datetime="2020-12-21T12:06:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-21</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>给定一个只包括 ‘(‘，’)’，’{‘，’}’，’[‘，’]’  的字符串，判断字符串是否有效。</p>
-<p>有效字符串需满足：</p>
-<p>左括号必须用相同类型的右括号闭合。<br>左括号必须以正确的顺序闭合。<br>注意空字符串可被认为是有效字符串。</p>
-<h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;()&quot;</span><br><span class="line">输出: true</span><br><span class="line"></span><br><span class="line">输入: &quot;()[]&#123;&#125;&quot;</span><br><span class="line">输出: true</span><br><span class="line"></span><br><span class="line">输入: &quot;(]&quot;</span><br><span class="line">输出: false</span><br><span class="line"></span><br><span class="line">输入: &quot;([)]&quot;</span><br><span class="line">输出: false</span><br><span class="line"></span><br><span class="line">输入: &quot;&#123;[]&#125;&quot;</span><br><span class="line">输出: true</span><br></pre></td></tr></table></figure>
-
-<h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">var isValid &#x3D; function (s) &#123;</span><br><span class="line">    &#x2F;&#x2F; 1、定义一个栈 利用栈的概念分析 先看目标字符串元素是不是左括号，如果是 则入栈 然后看下一个</span><br><span class="line">    &#x2F;&#x2F; 2、如果不是 看栈的长度是否为0 如果为0的话说明没有左括号元素直接就是右括号 肯定不合规 直接 return false</span><br><span class="line">    &#x2F;&#x2F; 3、判断当前元素和栈顶元素是否匹配，如果匹配说明是一组合法括号 把栈顶元素弹出 并继续看下一个 如果不匹配 则直接return false</span><br><span class="line">    &#x2F;&#x2F; 4、循环结束之后判断栈里是否还有元素，如果没有则说明完全匹配 否则 return false</span><br><span class="line">    const cache &#x3D; [];</span><br><span class="line">    const map &#x3D; new Map();</span><br><span class="line">    map.set(&quot;(&quot;, &quot;)&quot;);</span><br><span class="line">    map.set(&quot;[&quot;, &quot;]&quot;);</span><br><span class="line">    map.set(&quot;&#123;&quot;, &quot;&#125;&quot;);</span><br><span class="line">    for (let i &#x3D; 0; i &lt; s.length; i++) &#123;</span><br><span class="line">        if (map.has(s[i])) &#123;</span><br><span class="line">            &#x2F;&#x2F; 元素是左括号  入栈</span><br><span class="line">            cache.push(s[i]);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            &#x2F;&#x2F; 元素不是左括号</span><br><span class="line">            if (cache.length &#x3D;&#x3D;&#x3D; 0) &#123;</span><br><span class="line">                &#x2F;&#x2F; 步骤2</span><br><span class="line">                &#x2F;&#x2F; 栈里没有左括号 直接来了一个右括号 直接return false</span><br><span class="line">                return false;</span><br><span class="line">            &#125;</span><br><span class="line">            if (map.get(cache[cache.length - 1]) &#x3D;&#x3D;&#x3D; s[i]) &#123;</span><br><span class="line">                &#x2F;&#x2F; 步骤3</span><br><span class="line">                cache.pop();</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                return false;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    &#x2F;&#x2F; 步骤4</span><br><span class="line">    if (cache.length) &#123;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">    return true;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-    
-
-    
-
     
 
   </div>
@@ -447,16 +323,76 @@
     
 
     
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/12/21/isValid/">展开全文 >></a>
-    </p>
+
     
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/12/29/%E7%AE%80%E5%8C%96%E8%B7%AF%E5%BE%84/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
 
     
     <div class="clearfix"></div>
   </div>
   </div>
 </article>
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2020/12/28/http%E5%92%8Chttps/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">http和https</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -477,98 +413,37 @@
 
 
 
-  
-    <article id="post-fib" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/12/21/fib/" target="_blank">fib斐波那契数</a>
-  
-    </h1>
-  
 
 
-  
-  
-<a href="/2020/12/21/fib/" class="archive-article-date">
-        <time datetime="2020-12-21T11:36:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-21</time>
-</a>
 
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 方案一：暴力递归</span></span><br><span class="line"><span class="comment">// var fib = function (N) &#123;</span></span><br><span class="line"><span class="comment">//     if (N === 0 || N === 1) &#123;</span></span><br><span class="line"><span class="comment">//         return N;</span></span><br><span class="line"><span class="comment">//     &#125;</span></span><br><span class="line"><span class="comment">//     return fib(N - 1) + fib(N - 2);</span></span><br><span class="line"><span class="comment">// &#125;;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 方案二：递推 使用循环  利用缓存优化重复的计算</span></span><br><span class="line"><span class="keyword">var</span> fib = <span class="function"><span class="keyword">function</span> (<span class="params">N</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// O(n)</span></span><br><span class="line">  <span class="keyword">let</span> cache = [];</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt;= N; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (i === <span class="number">0</span> || i === <span class="number">1</span>) &#123;</span><br><span class="line">      cache[i] = i;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      cache[i] = cache[i - <span class="number">1</span>] + cache[i - <span class="number">2</span>];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> cache[N];</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/12/21/fib/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
 
 
 
 
   
+  <div id="gitment-ctn"></div>
   
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &amp;raquo;</a>
-    </nav>
+    <!-- 中文 -->
+    <link rel="stylesheet" href="/lib/gitment.css">
+    <script src="/lib/gitment.js"></script>
   
+  <script>
+    <!-- id: "简化路径" -->
+    var gitment = new Gitment({
+      id: "20201229162634",
+      owner: 'WangXiTong',
+      repo: 'myBlog',
+      oauth: {
+        client_id: 'ef18c87e452b39b9ae4e',
+        client_secret: '26337c6bbe3074e721a9206a05088a312eb10cd3',
+      },
+    })
+    gitment.render('gitment-ctn')
+  </script>
+
+
+  
+
 
 
           </div>
@@ -608,8 +483,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

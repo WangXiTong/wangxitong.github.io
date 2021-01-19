@@ -188,6 +188,92 @@
             
 
   
+    <article id="post-js实现链表反转" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2021/01/19/js%E5%AE%9E%E7%8E%B0%E9%93%BE%E8%A1%A8%E5%8F%8D%E8%BD%AC/" target="_blank">js实现链表反转</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2021/01/19/js%E5%AE%9E%E7%8E%B0%E9%93%BE%E8%A1%A8%E5%8F%8D%E8%BD%AC/" class="archive-article-date">
+        <time datetime="2021-01-19T07:42:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-19</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 引用了上一篇博文中的一些方法，具体可看上一篇</span><br><span class="line">import &#123; Node, LinkNodeList &#125; from &quot;.&#x2F;LinkNode.js&quot;;</span><br><span class="line"></span><br><span class="line">Object.assign(LinkNodeList.prototype, &#123;</span><br><span class="line">  reversal() &#123;</span><br><span class="line">    let prev &#x3D; null;</span><br><span class="line">    let cur &#x3D; this.head;</span><br><span class="line">    while (cur) &#123;</span><br><span class="line">      const next &#x3D; cur.next;</span><br><span class="line">      cur.next &#x3D; prev;</span><br><span class="line">      prev &#x3D; cur;</span><br><span class="line">      cur &#x3D; next;</span><br><span class="line">    &#125;</span><br><span class="line">    this.head &#x3D; prev;</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;);</span><br><span class="line">let linkNode &#x3D; new LinkNodeList();</span><br><span class="line">linkNode.append(&quot;0000&quot;);</span><br><span class="line">linkNode.append(&quot;1111&quot;);</span><br><span class="line">linkNode.append(&quot;2222&quot;);</span><br><span class="line">linkNode.append(&quot;3333&quot;);</span><br><span class="line">linkNode.append(&quot;4444&quot;);</span><br><span class="line">linkNode.print();</span><br><span class="line">linkNode.reversal();</span><br><span class="line">linkNode.print();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2021/01/19/js%E5%AE%9E%E7%8E%B0%E9%93%BE%E8%A1%A8%E5%8F%8D%E8%BD%AC/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-js实现链表的增删改查" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -455,98 +541,6 @@
     
     <p class="article-more-link">
       <a class="article-more-a" href="/2021/01/07/js%E5%BE%AA%E7%8E%AF%E5%88%A0%E9%99%A4%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-简化路径" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/12/29/%E7%AE%80%E5%8C%96%E8%B7%AF%E5%BE%84/" target="_blank">简化路径</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/12/29/%E7%AE%80%E5%8C%96%E8%B7%AF%E5%BE%84/" class="archive-article-date">
-        <time datetime="2020-12-29T08:26:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-29</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="描述-（详见LeetCode-71题）"><a href="#描述-（详见LeetCode-71题）" class="headerlink" title="描述 （详见LeetCode 71题）"></a>描述 （详见LeetCode 71题）</h1><p>以 Unix 风格给出一个文件的绝对路径，你需要简化它。或者换句话说，将其转换为规范路径。</p>
-<p>在 Unix 风格的文件系统中，一个点（.）表示当前目录本身；此外，两个点 （..） 表示将目录切换到上一级（指向父目录）；两者都可以是复杂相对路径的组成部分。更多信息请参阅：Linux / Unix中的绝对路径 vs 相对路径</p>
-<p>请注意，返回的规范路径必须始终以斜杠 / 开头，并且两个目录名之间必须只有一个斜杠 /。最后一个目录名（如果存在）不能以 / 结尾。此外，规范路径必须是表示绝对路径的最短字符串。</p>
-<p>示例 1：<br>输入：”/home/“<br>输出：”/home”<br>解释：注意，最后一个目录名后面没有斜杠。</p>
-<p>示例 2：<br>输入：”/../“<br>输出：”/“<br>解释：从根目录向上一级是不可行的，因为根是你可以到达的最高级。</p>
-<p>示例 3：<br>输入：”/home//foo/“<br>输出：”/home/foo”<br>解释：在规范路径中，多个连续斜杠需要用一个斜杠替换。</p>
-<p>示例 4：<br>输入：”/a/./b/../../c/“<br>输出：”/c”</p>
-<h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * @param &#123;string&#125; path</span><br><span class="line"> * @return &#123;string&#125;</span><br><span class="line"> *&#x2F;</span><br><span class="line">var simplifyPath &#x3D; function (path) &#123;</span><br><span class="line">    let stack &#x3D; [];</span><br><span class="line">    let paths &#x3D; path.split(&#39;&#x2F;&#39;);</span><br><span class="line">    let i &#x3D; 0;</span><br><span class="line">    let len &#x3D; paths.length;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 方案一 运行速度快 解决本道算法题比较有优势   但是如果需要匹配的规则比较多 比如需要匹配 ~ 或者正则等 就需要在循环里写大量的if else来处理</span><br><span class="line">    &#x2F;&#x2F; for (i; i &lt; len; i++) &#123;</span><br><span class="line">    &#x2F;&#x2F;     const p &#x3D; paths[i];</span><br><span class="line">    &#x2F;&#x2F;     if (p &#x3D;&#x3D; &#39;..&#39;) &#123;</span><br><span class="line">    &#x2F;&#x2F;         &#x2F;&#x2F; 返回上一级</span><br><span class="line">    &#x2F;&#x2F;         stack.pop();</span><br><span class="line">    &#x2F;&#x2F;     &#125; else if (p &amp;&amp; p !&#x3D; &#39;.&#39;) &#123;</span><br><span class="line">    &#x2F;&#x2F;         stack.push(p);</span><br><span class="line">    &#x2F;&#x2F;     &#125;</span><br><span class="line">    &#x2F;&#x2F; &#125;</span><br><span class="line">    &#x2F;&#x2F; return &#39;&#x2F;&#39; + stack.join(&#39;&#x2F;&#39;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 方案二  维护一个规则对象（策略模式） 循环里只需要写一个if else 符合规则 就使用规则  不符合 就push  这样在本题的运行速度没有方案一快 但是是一种适用于复杂场景的方案  其基本思路都是一样的  只是写法略有不同</span><br><span class="line">    const obj &#x3D; &#123;</span><br><span class="line">        &#39;&#39;: stack &#x3D;&gt; stack,</span><br><span class="line">        &#39;.&#39;: stack &#x3D;&gt; stack,</span><br><span class="line">        &#39;..&#39;: stack &#x3D;&gt; &#123;</span><br><span class="line">            return stack.pop();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    for (i; i &lt; len; i++) &#123;</span><br><span class="line">        const p &#x3D; paths[i];</span><br><span class="line">        if (obj[p]) &#123;</span><br><span class="line">            obj[p](stack);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            stack.push(p);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return &#39;&#x2F;&#39; + stack.join(&#39;&#x2F;&#39;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/12/29/%E7%AE%80%E5%8C%96%E8%B7%AF%E5%BE%84/">展开全文 >></a>
     </p>
     
 
